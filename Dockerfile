@@ -1,6 +1,7 @@
 FROM golang:1.13.9-alpine as builder
 WORKDIR /go/src/github.com/cxnam/rds_exporter/
 COPY . /go/src/github.com/cxnam/rds_exporter/
+RUN go get
 RUN go build -o ./dist/rds_exporter
 
 FROM alpine:3.11.5
