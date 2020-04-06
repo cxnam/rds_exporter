@@ -7,6 +7,6 @@ FROM alpine:3.11.5
 RUN apk add --update ca-certificates
 
 WORKDIR /app
-COPY --from=builder go/src/github.com/cxnam/rds_exporter/ .
+COPY --from=builder go/src/github.com/cxnam/rds_exporter/dist/rds_exporter .
 EXPOSE 9042
 ENTRYPOINT ["./rds_exporter", "--config.file=./config.yml"]
