@@ -4,7 +4,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/percona/exporter_shared/helpers"
+	"github.com/cxnam/exporter_shared/helpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -46,7 +46,7 @@ func TestParse(t *testing.T) {
 }
 
 func TestParseUptime(t *testing.T) {
-	t.Skip("TODO Parse uptime https://jira.percona.com/browse/PMM-2131")
+	t.Skip("TODO Parse uptime https://jira.cxnam.com/browse/PMM-2131")
 
 	_ = "01:45:58"
 	_ = "1 day, 07:11:58"

@@ -38,7 +38,7 @@ type osMetrics struct {
 	Swap              swap              `json:"swap"`
 	Tasks             tasks             `json:"tasks"`
 
-	// TODO Handle this: https://jira.percona.com/browse/PMM-3835
+	// TODO Handle this: https://jira.cxnam.com/browse/PMM-3835
 	PhysicalDeviceIO []diskIO `json:"physicalDeviceIO"`
 }
 
@@ -137,7 +137,7 @@ type processList struct {
 	TGID         int     `json:"tgid"         help:"The thread group identifier, which is a number representing the process ID to which a thread belongs. This identifier is used to group threads from the same process."`
 	VSS          int     `json:"vss"          help:"The amount of virtual memory allocated to the process, in kilobytes."`
 
-	// TODO Handle this: https://jira.percona.com/browse/PMM-5150
+	// TODO Handle this: https://jira.cxnam.com/browse/PMM-5150
 	VMLimit interface{} `json:"vmlimit" help:"-"`
 }
 
@@ -466,7 +466,7 @@ func (m *osMetrics) makePrometheusMetrics(region string, labels map[string]strin
 		float64(m.Timestamp.Unix()),
 	))
 
-	// TODO Parse uptime: https://jira.percona.com/browse/PMM-2131
+	// TODO Parse uptime: https://jira.cxnam.com/browse/PMM-2131
 
 	res = append(res, prometheus.MustNewConstMetric(
 		prometheus.NewDesc("rdsosmetrics_General_numVCPUs", "The number of virtual CPUs for the DB instance.", nil, constLabels),

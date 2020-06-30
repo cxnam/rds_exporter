@@ -1,10 +1,10 @@
 # RDS Exporter
 
-[![Release](https://img.shields.io/github/release/percona/rds_exporter.svg?style=flat)](https://github.com/percona/rds_exporter/releases/latest)
-[![Build Status](https://travis-ci.com/percona/rds_exporter.svg?branch=master)](https://travis-ci.com/percona/rds_exporter)
-[![Go Report Card](https://goreportcard.com/badge/github.com/percona/rds_exporter)](https://goreportcard.com/report/github.com/percona/rds_exporter)
-[![CLA assistant](https://cla-assistant.percona.com/readme/badge/percona/rds_exporter)](https://cla-assistant.percona.com/percona/rds_exporter)
-[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/percona/rds_exporter.svg?maxAge=2592000)](https://codecov.io/github/percona/rds_exporter?branch=master)
+[![Release](https://img.shields.io/github/release/cxnam/rds_exporter.svg?style=flat)](https://github.com/cxnam/rds_exporter/releases/latest)
+[![Build Status](https://travis-ci.com/cxnam/rds_exporter.svg?branch=master)](https://travis-ci.com/cxnam/rds_exporter)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cxnam/rds_exporter)](https://goreportcard.com/report/github.com/cxnam/rds_exporter)
+[![CLA assistant](https://cla-assistant.cxnam.com/readme/badge/cxnam/rds_exporter)](https://cla-assistant.cxnam.com/cxnam/rds_exporter)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/cxnam/rds_exporter.svg?maxAge=2592000)](https://codecov.io/github/cxnam/rds_exporter?branch=master)
 
 An [AWS RDS](https://aws.amazon.com/ru/rds/) exporter for [Prometheus](https://github.com/prometheus/prometheus).
 It gets metrics from both [basic CloudWatch Metrics](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)
@@ -81,5 +81,5 @@ scrape_configs:
 
 Exporter synthesizes [node_exporter](https://github.com/prometheus/node_exporter)-like metrics where possible.
 
-You can see a list of basic monitoring metrics [there](https://github.com/percona/rds_exporter/blob/master/basic/testdata/all.txt)
-and a list of enhanced monitoring metrics in text files [there](https://github.com/percona/rds_exporter/tree/master/enhanced/testdata).
+You can see a list of basic monitoring metrics [there](https://github.com/cxnam/rds_exporter/blob/master/basic/testdata/all.txt)
+and a list of enhanced monitoring metrics in text files [there](https://github.com/cxnam/rds_exporter/tree/master/enhanced/testdata).
